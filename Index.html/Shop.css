@@ -1,0 +1,117 @@
+ body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+body {
+  background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)),
+              url('Images/background.jfif') no-repeat center center/cover;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  /* Main category headers */
+h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+}
+
+/* Subcategory toggle button styles */
+button.toggle-btn {
+  margin: 10px 0;
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button.toggle-btn:hover {
+  background-color: #004999;
+}
+
+/* Product table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background-color: #e0f0ff;
+  font-weight: 600;
+  color: #0066cc;
+}
+tr:hover {
+  background-color: #f0faff;
+}
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+
+/* Responsive */
+@media(max-width: 768px){
+  table, thead, tbody, tr, th, td {
+    display: block;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+  td::before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  td:nth-of-type(1)::before { content: "Image"; }
+  td:nth-of-type(2)::before { content: "Product Name"; }
+  td:nth-of-type(3)::before { content: "Price"; }
+  td:nth-of-type(4)::before { content: "Actions"; }
+}

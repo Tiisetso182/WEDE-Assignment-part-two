@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* Dark Black Background */
+    color: #333; /* Dark Blue Text */
+}
+
+body{
+    background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)),
+                url('Images/background.jfif') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+header {
+    background-color: #333; /* Dark Red Header */
+    color: #fff; /* White Text */
+    padding: 1em;
+    text-align: center;
+    
+}
+h1, h2 {
+    margin: 0.5em 0;
+    color: #fff; /* White for headings */
+}
+
+.service-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White boxes for services */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #007bff; /* Example blue, change as needed */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px;
+}
+
+.service h3 {
+    margin: 0;
+}
+
+.service p {
+    line-height: 1.6;
+}

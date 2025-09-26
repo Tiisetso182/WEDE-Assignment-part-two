@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #0010a3;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+   
+  }
+
+  body{
+    background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)),
+                url('Images/background.jfif') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+header {
+    background-color: #940000; /* Deep blue for primary color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+h1, h2 {
+    margin: 0.5em 0;
+    color: #ffffff; /* Blue for headings */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+section {
+    padding: 2em;
+    background-color: #6d5d5d; /* White Section */
+    margin: 1em;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* Example styling for a specific element */
+.mission-statement {
+    font-style: italic;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 1em auto;
+   border-radius: 8px; /* Rounded corners */
+}

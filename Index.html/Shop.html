@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kasi Threads - Shop</title>
+<link rel="Stylesheet" href="Shop.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Services.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <h1>Elevate Your Style, Where Tradition Meets Trend.
+    Shop Our Collections</h1>
+
+<!-- Tops Section -->
+<div class="category-section">
+  <h2>Tops</h2>
+  <h3>Tees</h3>
+<button class="toggle-btn" onclick="toggleCategory('tees-table')">Show/Hide T-Shirts</button>
+<table id="tees-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="Images/Graphic Tees.jfif" alt="Rubiks Cube Tee" /></td>
+      <td>Rubiks Cube Tee all colors</td>
+      <td>R250.00</td>
+    </tr>
+    <tr>
+      <td><img src="Images/white graphic tee.jfif" alt="White Graphic Tee"  /></td>
+      <td>White Graphic Tee</td>
+      <td>R250</td>
+    </tr>
+    <tr>
+      <td><img src="Images/blue graphic tee.jfif" alt="Sky Blue Tee" /></td>
+      <td>Sky Blue Tee</td>
+      <td>R250</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Hoodies</h3>
+<button class="toggle-btn" onclick="toggleCategory('hoodies-table')">Show/Hide Hoodies</button>
+<table id="hoodies-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="Images/white hoodie.jfif" alt="White  Hoodie" /></td>
+      <td>Threads Of Hope White Hoodie</td>
+      <td>R400.00</td>
+    </tr>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Uno Cards Hoodie.jpeg" alt="Black Hoodie"  /></td>
+      <td>Black Uno cards Hoodie</td>
+      <td>R380</td>
+    </tr>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Teddy Bear Hoodie.jpeg" alt="Teddy Bear Hoodie"  /></td>
+      <td>White Teddy Bear Hoodie</td>
+      <td>R400</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Sweaters</h3>
+<button class="toggle-btn" onclick="toggleCategory('sweatshirts-table')">Show/Hide Sweatshirts</button>
+<table id="sweatshirts-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Orange Sweatshirt.jpeg" alt="Orange Sweatshirt" /></td>
+      <td>Orange Sweater</td>
+      <td>R310.00</td>
+    </tr>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Teddy Bear Sweater.jpeg" alt="Teddy Bear Sweater"  /></td>
+      <td>White Teddy Bear Sweater</td>
+      <td>R350</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- Bottoms Section -->
+<div class="category-section">
+  <h2>Bottoms</h2>
+  <h3>Shorts</h3>
+<button class="toggle-btn" onclick="toggleCategory('shorts-table')">Show/Hide Shorts</button>
+<table id="shorts-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Summer Shorts.jpeg" alt="Summer Shorts" /></td>
+      <td>Summer Shorts</td>
+      <td>R250.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Accessories Section -->
+<div class="category-section">
+  <h2>Accessories</h2>
+  <h3>Caps</h3>
+<button class="toggle-btn" onclick="toggleCategory('caps-table')">Show/Hide Caps</button>
+<table id="caps-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Camouflage Panel Cap.jpeg" alt="Camouflage Cap" /></td>
+      <td>Camouflage Cap</td>
+      <td>R150.00</td>
+    </tr>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\5 Panel Cap.jpeg" alt="5 Panel Cap"  /></td>
+      <td>5 Panel Cap</td>
+      <td>R150</td>
+    </tr>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Classic 5 Panel Cap.jpeg" alt="Classic 5 Panel Cap"  /></td>
+      <td>Classic 5 Panel Cap</td>
+      <td>R150</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Bucket Hats</h3>
+<button class="toggle-btn" onclick="toggleCategory('buckethats-table')">Show/Hide Bucket Hats</button>
+<table id="buckethats-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Ripped  Hats.jpeg" alt="Bucket Hat" /></td>
+      <td>Ripped Hats</td>
+      <td>R150.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Beanies</h3>
+<button class="toggle-btn" onclick="toggleCategory('beanies-table')">Show/Hide Beanies</button>
+<table id="beanies-table" style="display:none;">
+  <tbody>
+    <tr>
+      <td><img src="c:\Users\RC_Student_lab\Downloads\Hang Over Beanies.jpeg" alt="Hang Over Beanies" /></td>
+      <td>Hang Over Beanies</td>
+      <td>R150.00</td>
+    </tr>
+  </tbody>
+</table>
+  
+<script>
+  function toggleCategory(id) {
+    const table = document.getElementById(id);
+    table.style.display = (table.style.display === 'none' || table.style.display === '') ? 'table' : 'none';
+  }
+  </script>
+
+</body>
+</html>
